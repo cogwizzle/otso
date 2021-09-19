@@ -13,6 +13,15 @@ otso
 ```
 That is it you're up and running.
 
+## Commands.
+Otso comes with:
+|Command|Description|
+|---|---|
+|otso|A tool for organiztion your tools|
+|version (v)|Output the version number|
+|alert (a)|Run command and audibly alert me when it completes.|
+|help (h)|help!|
+
 ## Writing plugins
 To extend the functionlity of Otso you can create your own plugins.  Plugins allow you to add a wide range of functionality to Otso.  Below are the steps to creating a plugin.
 1. Create a folder with the name `otso-*nameOfPlugin*`.
