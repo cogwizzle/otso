@@ -11,6 +11,7 @@ const homedir = require('os').homedir()
 async function run(argv) {
   const globalModules = path.resolve(
     (await exec('npm config get prefix')).stdout.replace('\n', '').trim() +
+      (process.platform === 'Win32' ? '/lib' : '') +
       '/node_modules'
   )
   const explorer = cosmiconfig('otso')
