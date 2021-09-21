@@ -29,7 +29,12 @@ async function run(argv) {
       matching: 'otso-*',
       hidden: false
     })
-    .help() // provides default for help, h, --help, -h
+    .plugins('./node_modules', { matching: '*/otso-*', hidden: false })
+    .plugins(globalModules, {
+      matching: '*/otso-*',
+      hidden: false
+    })
+    .help() // provides default for help, , --help, -h
     .version() // provides default for version, v, --version, -v
     .create()
   // enable the following method if you'd like to skip loading one of these core extensions
